@@ -1,8 +1,8 @@
 {
   "name": "segmented-control",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "💅  A good-lookin' segmented control React component",
-  "homepage": "https://github.com/lorensr/segmented-control",
+  "homepage": "https://github.com/mctechnologiesventures/segmented-control",
   "scripts": {
     "start": "start-storybook -p 9009",
     "build-storybook": "build-storybook",
@@ -12,18 +12,19 @@
     "release": "release patch && echo 'now run npm publish'"
   },
   "bugs": {
-    "url": "https://github.com/lorensr/segmented-control/issues"
+    "url": "https://github.com/mctechnologiesventures/segmented-control"
   },
   "license": "MIT",
   "main": "dist/index.js",
   "exports": {
-    ".": "dist/index.js",
-    "./SegmentedControlWithoutStyles": "dist/SegmentedControlWithoutStyles.js",
-    "./SegmentedControl": "dist/SegmentedControl.js",
-    "./FormsySegmentedControl": "dist/FormsySegmentedControl.js"
+    ".": "./dist/index.js",
+    "./SegmentedControlWithoutStyles": "./dist/SegmentedControlWithoutStyles.js",
+    "./SegmentedControl": "./dist/SegmentedControl.js",
+    "./FormsySegmentedControl": "./dist/FormsySegmentedControl.js"
   },
   "files": [
-    "dist"
+    "dist/**/*",
+    "src/**/*.{js,d.ts}"
   ],
   "keywords": [
     "react",
@@ -40,7 +41,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lorensr/segmented-control.git"
+    "url": "https://github.com/mctechnologiesventures/segmented-control"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.7",
@@ -92,7 +93,7 @@
     "extends": "./node_modules/react-scripts/config/eslint.js"
   },
   "author": {
-    "name": "Loren Sands-Ramshaw",
-    "url": "http://lorensr.me"
+    "name": "Radu Carlig",
+    "url": "http://wellnessentially.com"
   }
 }
